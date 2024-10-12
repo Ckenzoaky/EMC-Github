@@ -754,17 +754,17 @@ a {
     text-align: center;
   }
   .hero {
-    height: 90vh;
+    height: 80vh;
     border-radius: 0 0 50px 50px;
   }
   .l-header {
-    height: 4rem;
+    height: 4.5rem;
   }
   .hero__content h1 {
     letter-spacing: 0.1em;
   }
   .services__content__description {
-    padding: 0;
+    padding: 10px;
   }
   .testimonials {
     border-radius: 160px 0;
@@ -773,11 +773,7 @@ a {
     border-radius: 0 160px;
   }
   .gallery__img img{
-    /* display: grid; */
-    /* grid-template-columns: repeat(2 , 1fr); */
-    width: 150px;
     height: 150px;
     object-fit: cover;
-
   }
 }
