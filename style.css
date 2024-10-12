@@ -748,6 +748,9 @@ a {
 }
 
 @media (max-width: 680px) {
+  body{
+    overflow-x: hidden;
+  }
   .hero .hero__content {
     margin-top: -110px;
     justify-content: center;
@@ -773,6 +776,7 @@ a {
     border-radius: 0 160px;
   }
   .gallery__img img{
+    width: 150px;
     height: 150px;
     object-fit: cover;
   }
