@@ -773,8 +773,8 @@ a {
     border-radius: 0 160px;
   }
   .gallery__img img{
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(2 , 1fr); */
     width: 150px;
     height: 150px;
     object-fit: cover;
