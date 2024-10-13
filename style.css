@@ -67,23 +67,25 @@ body {
   font-family: var(--body-font);
   overflow-x: hidden;
 }
-h1, h2{
+h1,
+h2 {
   animation: reveal linear;
-  animation-timeline:view();
+  animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end:contain 50%;
+  animation-range-end: contain 50%;
 }
-span, p{
+span,
+p {
   animation: reveal linear;
-  animation-timeline:view();
+  animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end:cover 30%;
+  animation-range-end: cover 30%;
 }
-img{
+img {
   animation: reveal linear;
-  animation-timeline:view();
+  animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end:contain 50%;
+  animation-range-end: cover 50%;
 }
 ul {
   list-style: none;
@@ -737,7 +739,7 @@ a {
     top: -14%;
   }
   .hero .hero__content h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   .hero .hero__content p {
     align-items: flex-start;
@@ -769,7 +771,7 @@ a {
     border-radius: 150px 0;
   }
   .testimonails__item:hover .testimonial__img img {
-    transform: translate(290px) rotate(360deg);
+    transform: none;
   }
   .testimonails__item {
     width: 99%;
@@ -785,42 +787,33 @@ a {
     height: 150px;
     object-fit: cover;
   }
+  .gallery__img img:hover {
+    transform: none;
+    transition: none;
+  }
   .footer img {
-    width: 70px;
+    width: 60px;
   }
 
   @keyframes reveal {
-  from{
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes slide {
-  from{
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
-}
-
-@media (max-width: 480px){
-  .body{
-    overflow: hidden;
+  @keyframes slide {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  .testimonails__item:hover .testimonial__img img {
-    transform:none;
-  }
-  .testimonails__item {
-    width: 100%;
-  }
-
 }
