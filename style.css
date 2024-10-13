@@ -58,9 +58,9 @@
 html {
   scroll-behavior: smooth;
 }
-div {
+/* div {
   border: 1px solid red !important;
-}
+} */
 body {
   background-color: var(--white-color);
   font-size: var(--normal-font-size);
@@ -114,7 +114,6 @@ a {
   line-height: var(--h2-font-size);
   color: var(--black-color);
 }
-
 /* BOUTTON */
 .btn {
   width: 230px;
@@ -174,9 +173,7 @@ a {
   color: var(--white-color);
   z-index: var(--z-tooltip);
 }
-
 /* NAV */
-
 .l-header {
   width: 100%;
   height: var(--header-height);
@@ -202,9 +199,7 @@ a {
   color: var(--first-color);
   border: 2px solid var(--first-color);
 }
-
 /* MEDIA QUERY NAVBAR */
-
 /* DEBUT */
 @media (max-width: 960px) {
   .nav {
@@ -228,7 +223,6 @@ a {
   }
 }
 /* FIN */
-
 .nav__link {
   font-weight: var(--font-bold);
   color: var(--black-color);
@@ -255,9 +249,7 @@ a {
 .scroll-header {
   background-color: var(--white-color);
 }
-
 /* PARAGRAPHE EXIGEZ LA QUALITE ........ EMPLOI DU TEMPS */
-
 .hero {
   width: 100%;
   height: 130vh;
@@ -348,9 +340,7 @@ a {
   line-height: calc(var(--normal-font-size) + 12px);
   color: var(--black-color);
 }
-
 /* SERVICES */
-
 .services {
   width: 100%;
   background-image: url(assets/img/arabesco-left-top.svg);
@@ -409,7 +399,6 @@ a {
   width: 100%;
   height: 100%;
 }
-
 /* PACKAGE */
 .package {
   width: 100%;
@@ -475,7 +464,6 @@ a {
   margin: 0 auto;
   margin-top: var(--mb-1);
 }
-
 /* GALLERY */
 .gallery {
   width: 100%;
@@ -519,9 +507,7 @@ a {
 .gallery .btn {
   margin-top: 40px;
 }
-
 /* TESTIMONIALS  */
-
 .testimonial__img img {
   width: 80px;
   height: 80px;
@@ -592,6 +578,7 @@ a {
 .testimonials__description {
   line-height: var(--h2-font-size);
   margin-top: var(--mb-2);
+  text-align: center;
 }
 
 /* FOOTER */
@@ -678,9 +665,7 @@ a {
     transform: translate(300px) rotate(360deg);
   }
 }
-
 /* MEDIA QUERY 960 PX */
-
 @media (min-width: 960px) {
   .nav__menu {
     display: flex;
@@ -727,9 +712,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 /* MEDIA QUERY 1100 PX */
-
 @media (min-width: 1100px) {
   .about__description::before {
     height: 128%;
@@ -744,16 +727,12 @@ a {
     padding: 0;
   }
 }
-
+/* MEDIA QUERY 680 PX */
 @media (max-width: 680px) {
-  body {
-    overflow-x: hidden;
-  }
   .hero .hero__content {
     margin-top: -110px;
     justify-content: center;
     text-align: center;
-    overflow-x: hidden;
   }
   .hero {
     height: 80vh;
@@ -768,12 +747,18 @@ a {
   .services__content__description {
     padding: 0;
   }
-  /* .testimonials {
+  .testimonials {
     border-radius: 150px 0;
   }
   .testimonails__item:hover .testimonial__img img {
-    transform: translate(300px) rotate(360deg);
-  } */
+    transform: translate(290px) rotate(360deg);
+  }
+  .testimonails__item {
+    width: 99.99%;
+  }
+  .testimonials__card {
+    width: 100%;
+  }
   .package {
     border-radius: 0 150px;
   }
@@ -781,5 +766,8 @@ a {
     width: 150px;
     height: 150px;
     object-fit: cover;
+  }
+  .footer img {
+    width: 70px;
   }
 }

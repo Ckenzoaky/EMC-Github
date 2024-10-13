@@ -1,3 +1,9 @@
+// DEMANDER LE NOM DU CLIENT
+  let nom = prompt("Veuillez entrez votre nom pour acceder au site!");
+  let age = prompt("Veuillez entrez votre age");
+  age = Number;
+  alert ("Nous vous souhaitons la bienvenue sur notre site de coiffure et soins " + nom);
+
 /*------------ AFFICHER LE MENU-------------*/
 const showMneu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -36,8 +42,9 @@ function colorLink() {
 linkColor.forEach((L) => L.addEventListener("click", colorLink));
 
 // SCROLL HEADER
-function scrollHeader(){
+function scrollHeader() {
   const scrollHeader = document.getElementById("header");
-  if(this.scrollY >= 100) scrollHeader.classList.add("scroll-header");else scrollHeader.classList.remove("scroll-header");
+  if (this.scrollY >= 100) scrollHeader.classList.add("scroll-header");
+  else scrollHeader.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
