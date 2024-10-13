@@ -81,11 +81,12 @@ p {
   animation-range-start: cover 0%;
   animation-range-end: cover 30%;
 }
+.gallery__list__img img,
 img {
   animation: reveal linear;
   animation-timeline: view();
   animation-range-start: cover 0%;
-  animation-range-end: cover 50%;
+  animation-range-end: contain 50%;
 }
 ul {
   list-style: none;
